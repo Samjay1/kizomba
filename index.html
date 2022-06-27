@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='../public/css/style.css'>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/public/css/index.min.css" />
+
+    <title>Kizomba - Home</title>
+</head>
+<body style="font-family: 'Roboto', sans-serif;" class="bg-gray-100 relative">
+    
+    <nav class="bg-white shadow-lg">
+        <!-- Mobile menu -->
+        <div class="flex justify-between">
+           
+            <div class="p-2 py-3 flex space-x-10">
+                <p class="text-2xl mt-2 font-semibold"><a href="index.html">KIZOMBA</a></p>
+                <form class="border rounded-xl bg-gray-100 border border-gray-200 md:px-2  py-0 hidden sm:inline-block">
+                    <input type="text" placeholder="Search" class="focus:outline-none bg-gray-100 text-sm  py-0 pl-4  m-0 font-thin">
+                    <button type="submit" class="self-center rounded-2xl focus:outline-none text-black hover:bg-gray-300 p-2 ml-0 mt-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>    
+                    </button>
+                </form>
+            </div>
+            <div class="p-2 py-3 flex space-x-2 ">
+                <a class="border px-3 py-2 text-blue-700 border-blue-700 hover:bg-blue-400 hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="#">Courses</a>
+                <!-- <a class="border px-3 py-2 text-blue-700 border-blue-700 hover:bg-blue-400 hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="/students/register.html">Sign Up</a> -->
+                <a class=" border px-3 py-2 bg-blue-700 text-white border-blue-700 hover:bg-blue-400 hover:border-white hover:text-white transition duration-300 rounded-md text-sm hidden sm:inline-block" href="/students/login.html">Log In</a>
+                <p class="flex">
+                    <a class="rounded-3xl text-blue-700 pt-2  block" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                          </svg>
+                          
+                    </a>
+                    <span class="bg-blue-700 text-white border rounded-2xl mb-4 px-2">3</span>
+                </p>
+                <a id="profilebtn" class="bg-gray-300 rounded-3xl shadow-lg  block" href="#"><img id="profileimg" class="h-9 w-9 object-cover object-top rounded-3xl" src="/public/images/d1.jpeg" alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <!-- PROFILE DROPDOWN -->
+    <div class="relative">
+        <div id="menulist" class="absolute  space-y-1 right-0 border w-32 bg-white  mx-1 my-1 rounded-lg">
+           <p class="border-b w-full py-2 rounded-t-lg hover:bg-blue-500"><a class="px-2 pr-6 py-2" href="/students/mycourses.html"> Your profile</a></p>
+           
+           <p class="border-b w-full py-2 hover:bg-blue-500"><a class="px-2 pr-6 py-2" href="#"> Settings</a></p>
+           
+           <p class="border-b w-full py-2 rounded-b-lg hover:bg-blue-500"><a class="px-2 pr-6 py-2" href="/students/login.html"> Sign out </a></p>
+           
+        </div>
+    </div>
+  
+    <main class=" md:w-3/5 w-4/5 m-auto my-4">
+        <!-- TOP BANNER AND TEXT -->
+        <div class="flex justify-between p-4 md:px-10 md:py-8 pb-6 space-y-2 flex-wrap h-auto bg-white rounded-lg shadow-sm">
+            <div class="text-sm font-normal sm:w-2/5  w-full pt-3 mb-2 md:mt-8">
+                <p class="text-3xl font-semibold">A heading will be placed here</p>
+                <p class="text-gray-500 font-thin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ut magni aspernatur tempora amet ipsum fugit,
+                     maiores quia dicta ipsam dolore,  a quam.
+                </p>
+                <p class="mt-4">                
+                    <a href="#" class="py-2 px-4 text-white bg-blue-600 rounded-md hover:bg-blue-700 hover:shadow-lg">Explore</a>
+                </p>
+            </div>
+
+            <div class="w-full sm:w-2/4 h-60">
+                <img class="object-cover object-top h-full w-full rounded-lg" src="./public/images/s1.jpeg" alt="">
+            </div>
+        </div>
+
+        <!-- FEATURED COURSES -->
+         <!-- COURSE LIST -->
+         <p class="text-center text-xl font-bold my-2 mt-10">Featured Courses</p>
+         <div class="grid md:grid-cols-3 sm:grid-cols-3 gap-3 mt-5">
+            <!-- COURSE ITEM -->
+              <div class="border overflow rounded-2xl shadow-lg bg-white border hover:border-gray-400  transition duration-300">
+                <a  href="#"> <img class="h-52 w-full object-cover object-top  rounded-t-lg " src="../public/images/s2.jpeg" alt=""></a>
+              
+              <div class="text-sm font-thin bg-white px-2 py-2 rounded-b-lg  transition duration-300">
+                <!-- title -->
+                <p class="font-normal truncate hover:text-blue-800"><a  href="#"> The Royal Dance of KIZOMBA</a></p>
+                <p class="font-normal text-gray-400">By Instructor's name</p>
+                <div class="font-normal text-gray-500 flex justify-between">
+                  <div class="flex text-yellow-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <span class="text-gray-400"> 4.3</span>
+                  </div>
+                    <span class="space-x-1 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      8min 45sec</span>
+                    <span class="text-red-600 text-lg">$49</span>
+                </div>
+
+                <!-- wishlist and add to cart btn -->
+                <div class="flex flex-wrap justify-center text-center space-x-2 py-2">
+                    <a href="#" class="flex-1 py-2 px-3 bg-gray-300 hover:bg-gray-600 hover:text-white rounded transition duration-300   font-normal">Wishlist</a>
+                    <a href="#" class="flex-1 m-0 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded transition duration-300 truncate font-normal">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <!-- END COURSE ITEM -->
+
+            <!-- COURSE ITEM -->
+            <div class="border overflow rounded-2xl shadow-lg bg-white border hover:border-gray-400  transition duration-300">
+                <a  href="#"> <img class="h-52 w-full object-cover object-top  rounded-t-lg " src="../public/images/s3.jpeg" alt=""></a>
+          
+                <div class="text-sm font-thin bg-white px-2 py-2 rounded-b-lg  transition duration-300">
+                    <!-- title -->
+                    <p class="font-normal truncate hover:text-blue-800"><a  href="#"> The Royal Dance of KIZOMBA</a></p>
+                    <p class="font-normal text-gray-400">By Instructor's name</p>
+                    <div class="font-normal text-gray-500 flex justify-between">
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <span class="text-gray-400"> 4.3</span>
+                    </div>
+                        <span class="space-x-1 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        8min 45sec</span>
+                        <span class="text-red-600 text-lg">$49</span>
+                    </div>
+
+                    <!-- wishlist and add to cart btn -->
+                    <div class="flex flex-wrap justify-center text-center space-x-2 py-2">
+                        <a href="#" class="flex-1 py-2 px-3 bg-gray-300 hover:bg-gray-600 hover:text-white rounded transition duration-300  font-normal">Wishlist</a>
+                        <a href="#" class="flex-1 m-0 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded transition duration-300 truncate font-normal">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+             <!-- END COURSE ITEM -->
+
+            <!-- COURSE ITEM -->
+            <div class="border overflow rounded-2xl shadow-lg bg-white border hover:border-gray-400  transition duration-300">
+                <a  href="#"> <img class="h-52 w-full object-cover object-top  rounded-t-2xl " src="../public/images/s4.jpeg" alt=""></a>
+            
+            <div class="text-sm font-thin bg-white px-2 py-2 rounded-b-2xl  transition duration-300">
+                <!-- title -->
+                <p class="font-normal truncate hover:text-blue-800"><a  href="#"> The Royal Dance of KIZOMBA</a></p>
+                <p class="font-normal text-gray-400">By Instructor's name</p>
+                <div class="font-normal text-gray-500 flex justify-between">
+                <div class="flex text-yellow-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <span class="text-gray-400"> 4.3</span>
+                </div>
+                    <span class="space-x-1 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    8min 45sec</span>
+                    <span class="text-red-600 text-lg">$49</span>
+                </div>
+
+                <!-- wishlist and add to cart btn -->
+                <div class="flex flex-wrap justify-center text-center space-x-2 py-2">
+                    <a href="#" class="flex-1 py-2 px-3 bg-gray-300 hover:bg-gray-600 hover:text-white rounded transition duration-300  font-normal">Wishlist</a>
+                    <a href="#" class="flex-1 m-0 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded transition duration-300 truncate  font-normal">Add to Cart</a>
+                </div>
+            </div>
+            </div>
+            <!-- END COURSE ITEM -->
+             <!-- COURSE ITEM -->
+             <div class="border overflow rounded-2xl shadow-lg bg-white border hover:border-gray-400  transition duration-300">
+                <a  href="#"> <img class="h-52 w-full object-cover object-top  rounded-t-lg " src="../public/images/d1.jpeg" alt=""></a>
+            
+                <div class="text-sm font-thin bg-white px-2 py-2 rounded-b-lg  transition duration-300">
+                    <!-- title -->
+                    <p class="font-normal truncate hover:text-blue-800"><a  href="#"> The Royal Dance of KIZOMBA</a></p>
+                    <p class="font-normal text-gray-400">By Instructor's name</p>
+                    <div class="font-normal text-gray-500 flex justify-between">
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <span class="text-gray-400"> 4.3</span>
+                    </div>
+                        <span class="space-x-1 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        8min 45sec</span>
+                        <span class="text-red-600 text-lg">$49</span>
+                    </div>
+
+                    <!-- wishlist and add to cart btn -->
+                    <div class="flex flex-wrap justify-center text-center space-x-2 py-2">
+                        <a href="#" class="flex-1 py-2 px-3 bg-gray-300 hover:bg-gray-600 hover:text-white rounded transition duration-300  font-normal">Wishlist</a>
+                        <a href="#" class="flex-1 m-0 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded transition duration-300 truncate  font-normal">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END COURSE ITEM -->
+             <!-- COURSE ITEM -->
+             <div class="border overflow p-0 rounded-2xl shadow-lg bg-white border hover:border-gray-400  transition duration-300">
+                <a  href="#"> <img class="h-52 w-full object-cover object-top  rounded-t-lg " src="../public/images/d3.jpeg" alt=""></a>
+            
+            <div class="text-sm font-thin bg-white px-2 py-2 rounded-b-lg  transition duration-300">
+                <!-- title -->
+                <p class="font-normal truncate hover:text-blue-800"><a  href="#"> The Royal Dance of KIZOMBA</a></p>
+                <p class="font-normal text-gray-400">By Instructor's name</p>
+                <div class="font-normal text-gray-500 flex justify-between">
+                <div class="flex text-yellow-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <span class="text-gray-400"> 4.3</span>
+                </div>
+                    <span class="space-x-1 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    8min 45sec</span>
+                    <span class="text-red-600 text-lg">$49</span>
+                </div>
+
+                <!-- wishlist and add to cart btn -->
+                <div class="flex flex-wrap justify-center text-center space-x-2 py-2">
+                    <a href="#" class="flex-1 py-2 px-3 bg-gray-300 hover:bg-gray-600 hover:text-white rounded transition duration-300  font-normal">Wishlist</a>
+                    <a href="#" class="flex-1 m-0 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded transition duration-300 truncate  font-normal">Add to Cart</a>
+                </div>
+            </div>
+            </div>
+            <!-- END COURSE ITEM -->
+             <!-- COURSE ITEM -->
+             <div class="border overflow rounded-2xl shadow-lg bg-white border hover:border-gray-400  transition duration-300">
+                <a  href="#"> <img class="h-52 w-full object-cover object-top  rounded-t-lg " src="../public/images/d2.jpeg" alt=""></a>
+            
+                <div class="text-sm font-thin bg-white px-2 py-2 rounded-b-lg  transition duration-300">
+                    <!-- title -->
+                    <p class="font-normal truncate hover:text-blue-800"><a  href="#"> The Royal Dance of KIZOMBA</a></p>
+                    <p class="font-normal text-gray-400">By Instructor's name</p>
+                    <div class="font-normal text-gray-500 flex justify-between">
+                    <div class="flex text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <span class="text-gray-400"> 4.3</span>
+                    </div>
+                        <span class="space-x-1 text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        8min 45sec</span>
+                        <span class="text-red-600 text-lg">$49</span>
+                    </div>
+
+                    <!-- wishlist and add to cart btn -->
+                    <div class="flex flex-wrap justify-center text-center space-x-2 py-2">
+                        <a href="#" class="flex-1 py-2 px-3 bg-gray-300 hover:bg-gray-600 hover:text-white rounded transition duration-300  font-normal">Wishlist</a>
+                        <a href="#" class="flex-1 m-0 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white rounded transition duration-300 truncate  font-normal">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END COURSE ITEM -->
+        </div>
+
+
+        <!-- AFFILIATE SECTION -->
+        <div class="flex justify-between md:mx-10 my-7 mt-20 sm:w-4/5 m-auto space-y-2 flex-wrap h-auto border border-gray-100 bg-white rounded-lg ">
+            <div class="w-full sm:w-2/4 h-60">
+                <img class="object-cover object-top h-full w-full rounded-t-lg   lg:rounded-none lg:rounded-l-lg" src="./public/images/af.jpeg" alt="">
+            </div>
+            <div class="text-sm font-normal sm:w-2/5  w-full pt-3 mb-2 md:mt-8 mx-4">
+                <p class="text-xl font-semibold">Become an Affiliate</p>
+                <p class="text-gray-500 font-thin">Lorem ipsum dolor, sit amet aspernatur tempora amet ipsum fugit,
+                     maiores quia dicta ipsam dolore,  a quam.
+                </p>
+                <p class="mt-3 mb-4">
+                    <a href="#" class="py-2 px-4 text-white bg-blue-600 rounded-md hover:bg-blue-700 hover:shadow-lg">Start earning today</a>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- TESTIMONIES -->
+        <div>
+            <p class="text-center text-xl font-bold mt-10">Testimonials</p>
+            <div id="carouselExampleCaptions" class="carousel slide relative carousel-dark my-5  border-gray-100 py-3 px-3 rounded-2xl bg-white" data-bs-ride="carousel">
+                <div class="carousel-inner relative w-full overflow-hidden">
+                  <div class="carousel-item active relative float-left w-full text-center">
+                    <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                      numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+                    </p>
+                    <div class="mt-12 mb-6 flex justify-center">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                        class="rounded-full w-24 h-24 shadow-lg"
+                        alt="smaple image"
+                      />
+                    </div>
+                    <p class="text-gray-500">- Anna Morian</p>
+                  </div>
+                  <div class="carousel-item relative float-left w-full text-center">
+                    <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
+                      "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
+                      repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing
+                      elit."
+                    </p>
+                    <div class="mt-12 mb-6 flex justify-center">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+                        class="rounded-full w-24 h-24 shadow-lg"
+                        alt="smaple image"
+                      />
+                    </div>
+                    <p class="text-gray-500">- Teresa May</p>
+                  </div>
+                  <div class="carousel-item relative float-left w-full text-center">
+                    <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
+                      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                      dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
+                      maiores."
+                    </p>
+                    <div class="mt-12 mb-6 flex justify-center">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                        class="rounded-full w-24 h-24 shadow-lg"
+                        alt="smaple image"
+                      />
+                    </div>
+                    <p class="text-gray-500">- Kate Allise</p>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-gray-800 text-white mt-24 py-4 pt-10 px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4  gap3  md:w-3/5 w-4/5 m-auto">
+            <div class="col-span-1  space-y-1 text-xs mb-4">             
+                <p class="text-2xl pb-2 font-semibold"><a href="index.html">KIZOMBA</a></p> 
+                <p><a href="#" class="hover:underline">Slogan</a></p>
+                <p><a href="#" class="hover:underline">Terms & Conditions</a></p>
+                <p><a href="#" class="hover:underline">Disclaimers</a></p>
+            </div>
+
+            <div class="col-span-1 text-xs space-y-1">             
+                <p class="text-sm  mt-3 underline pb-2 font-semibold">Quick Links</p> 
+                <p><a href="index.html" class="hover:underline">Our Courses</a></p>
+                <p><a href="#" class="hover:underline">Join us</a></p>
+                <p><a href="#" class="hover:underline">Become an Affiliate</a></p>
+            </div>
+
+            <div class="col-span-1 text-xs space-y-1">             
+                <p class="text-sm  mt-3 underline pb-2 font-semibold">Social Media</p> 
+                <p><a href="index.html" class="hover:underline">Facebook</a></p>
+                <p><a href="#" class="hover:underline">Instagram</a></p>
+                <p><a href="#" class="hover:underline">Twitter</a></p>
+                <p><a href="#" class="hover:underline">YouTube</a></p>
+            </div>
+
+            <div class="col-span-1 text-xs space-y-1">             
+                <p class="text-sm  mt-3 underline pb-2 font-semibold">Newsletter</p> 
+                <p><a href="index.html" class="hover:underline">Subscribe to our newsletter</a></p>
+                <form action="#">
+                    <div class="mt-2 w-full">
+                        <input class="border border-slate-300 lg:w-full  rounded-md py-2 pl-3   shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="email" id="email" name="email" placeholder="Email" required>
+                     </div>
+                <div class="text-center mt-0"> 
+                    <input class="px-5 py-2 w-full mt-2  bg-blue-600 hover:bg-blue-700 text-sm text-white rounded" type="submit" value="Subscribe"/>
+               </div>
+            </form>
+            </div>
+        </div>
+         <!-- Copywrite info -->
+         <div class="text-center text-xs font-normal my-3 ">
+            <p> &copy; 2022, Kizomba King & Queen</p>
+            <p>Developed by <a href="https://wewritetech.com/">WeWriteTechnologies</a></p>
+        </div>
+    </footer>
+
+
+
+    <script src="/public/js/index.min.js"></script>
+    <script src="/public/js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script> -->
+</body>
+</html>
