@@ -14,7 +14,7 @@
 
     <title>Kizomba - Home</title>
 </head>
-<body style="font-family: 'Roboto', sans-serif;" class="bg-gray-100 relative">
+<body style="font-family: 'Roboto', sans-serif;" class="bg-gray-100 font-normal relative">
     
     <nav class="bg-white shadow-lg">
         <!-- Mobile menu -->
@@ -51,7 +51,7 @@
     <!-- PROFILE DROPDOWN -->
     <div class="relative">
         <div id="menulist" class="absolute  space-y-1 right-0 border w-32 bg-white  mx-1 my-1 rounded-lg">
-           <p class="border-b w-full py-2 rounded-t-lg hover:bg-blue-500"><a class="px-2 pr-6 py-2" href="/students/mycourses.html"> Your profile</a></p>
+           <p class="border-b w-full py-2 rounded-t-lg hover:bg-blue-500"><a class="px-2 pr-6 py-2" href="/students/dashboard.html"> Your profile</a></p>
            
            <p class="border-b w-full py-2 hover:bg-blue-500"><a class="px-2 pr-6 py-2" href="#"> Settings</a></p>
            
@@ -363,7 +363,7 @@
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer class="bg-gray-800 text-white mt-24 py-4 pt-10 px-6">
+    <footer class="bg-gray-800 text-white mt-24 py-4 font-normal pt-10 px-6">
         <div class="grid grid-cols-2 md:grid-cols-4  gap3  md:w-3/5 w-4/5 m-auto">
             <div class="col-span-1  space-y-1 text-xs mb-4">             
                 <p class="text-2xl pb-2 font-semibold"><a href="index.html">KIZOMBA</a></p> 
@@ -392,22 +392,20 @@
                 <p><a href="index.html" class="hover:underline">Subscribe to our newsletter</a></p>
                 <form action="#">
                     <div class="mt-2 w-full">
-                        <input class="border border-slate-300 lg:w-full  rounded-md py-2 pl-3   shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="border border-slate-300 lg:w-full text-black rounded-md py-2 pl-3   shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="email" id="email" name="email" placeholder="Email" required>
                      </div>
-                <div class="text-center mt-0"> 
+                <div class="text-center mt-0">
                     <input class="px-5 py-2 w-full mt-2  bg-blue-600 hover:bg-blue-700 text-sm text-white rounded" type="submit" value="Subscribe"/>
                </div>
             </form>
             </div>
         </div>
          <!-- Copywrite info -->
-         <div class="text-center text-xs font-normal my-3 ">
-            <p> &copy; 2022, Kizomba King & Queen</p>
-            <p>Developed by <a href="https://wewritetech.com/">WeWriteTechnologies</a></p>
+        <div class="text-center  text-xs font-normal my-3">
+            <p>&copy; 2022 Kizomba King & Queen. </p>
+            <p>All rights reserved | Product of <a class="text-blue-500 hover:underline" href="https://wewritetech.com/">WeWrite Technologies</a></p>
         </div>
     </footer>
-
-
 
     <script src="/public/js/index.min.js"></script>
     <script src="/public/js/script.js"></script>
