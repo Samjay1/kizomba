@@ -26,61 +26,92 @@
                 <a class="" href="index.html">
                     <img class="h-20 object-fill w-36 bg-white p-2 m-3 rounded-b-3xl mb-0" src="/public/images/logo.png" alt="">
                 </a>
-                <form class="border h-10 mt-4 rounded-xl bg-gray-100 border border-gray-200 md:px-2  py-0 hidden sm:inline-block">
-                    <input type="text" placeholder="Search" class="focus:outline-none bg-gray-100 text-sm  py-0 pl-4  m-0 font-thin">
-                    <button type="submit" class="self-center rounded-2xl focus:outline-none text-black hover:bg-gray-300 p-2 ml-0 mt-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>    
-                    </button>
-                </form>
             </div>
-            <div class="p-2 py-3 h-16 flex space-x-2 mt-1 ">
-                <a class="border px-3 py-2 text-blue-900 border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="courses.html">Courses</a>
-                <!-- <a class="border px-3 py-2 text-blue-700 border-blue-700 hover:bg-blue-400 hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="/students/register.html">Sign Up</a> -->
-                <a class=" border px-3 py-2 bg-blue-900 text-white border-blue-700 hover:bg-blue-400 hover:border-white hover:text-white transition duration-300 rounded-md text-sm hidden sm:inline-block" href="/students/login.html">Log In</a>
-                <p class="flex">
-                    <a class="rounded-3xl text-blue-900 pt-2 hover:text-blue-600  block" href="home_cart.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                          </svg>
-                          
-                    </a>
-                    <span class="bg-blue-900 text-white border rounded-2xl mb-4 px-2">3</span>
-                </p>
-                <a id="profilebtn" class="bg-gray-300 rounded-3xl shadow-lg  block" href="#"><img id="profileimg" class="h-9 w-9 object-cover object-top rounded-3xl" src="/public/images/d1.jpeg" alt=""></a>
+            <div class="p-2 py-3 h-16 flex space-x-8  mt-1 ">
+                <a class="lg:block hidden px-3 py-2 text-blue-900 border-b border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 hover:rounded text-sm" href="#affiliate">Become an Affiliate</a>
+                <a class="lg:block hidden px-3 py-2 text-blue-900 border-b border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 hover:rounded text-sm" href="#contact">Contact</a> 
+                <a class="lg:block hidden px-3 py-2 text-blue-900 border-b border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 hover:rounded text-sm" href="courses.html">Courses</a>
+                
+                <div class=" inline-flex relative w-fit">
+                    <div class="absolute mt-2 inline-block top-0 right-0 bottom-auto left-auto translate-x-2/4 -translate-y-1/2 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 py-2 px-2.5 text-xs leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-900 text-white rounded-full z-10">3</div>
+                    <div class="px-1 border-b border-white  hover:border-blue-900  flex items-center justify-center text-center">
+                      <div>
+                        <a class="rounded-3xl flex-1 text-blue-900  block" href="home_cart.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                              </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                <hr class="lg:block hidden border border-blue-900  h-full">
+                 <a class="lg:block hidden border-b px-3 py-2  text-blue-900 border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 hover:rounded text-sm" href="/students/login.html">Log In</a>
+                 <a class="lg:block hidden border px-3 py-2 text-blue-900 border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="/students/register.html">Sign Up</a>
+                 
+                <!-- <a id="profilebtn" class="bg-gray-300 rounded-3xl shadow-lg  block" href="#"><img id="profileimg" class="h-9 w-9 object-cover object-top rounded-3xl" src="/public/images/d1.jpeg" alt=""></a> -->
+                <a id="profilebtn" class="text-blue-900 block lg:hidden mt-3" href="#">
+                    <svg id="profileimg" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path id="profileimg" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                </a>
             </div>
         </div>
     </nav>
     <!-- PROFILE DROPDOWN -->
     <div class="relative">
-        <div id="menulist" class="absolute hidden  space-y-1 right-0 border w-32 bg-white  mx-1 my-1 rounded-lg">
-           <p class="border-b w-full py-2 rounded-t-lg hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="/students/dashboard.html"> Your profile</a></p>
+        <div id="menulist" class="absolute hidden  space-y-1 right-0 border w-56 bg-white  mx-1 my-1 rounded-lg">
+
+           <p class="border-b w-full py-2  rounded-t-lg hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="index.html#affiliate"> Become an Affiliate</a></p>
+           <p class="border-b w-full py-2 hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="index.html#contact"> Contact us</a></p>
+           <p class="border-b w-full py-2 hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="courses.html"> Courses</a></p>
+           <p class="border-b w-full py-2 hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2"  href="/students/login.html"> Log in</a></p>
+           <p class="border-b w-full py-2 hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2"  href="/students/register.html"> Sign up</a></p>
+           <p class="border-b w-full py-2 rounded-b-lg bg-gray-100 text-gray-200 hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="/students/dashboard.html"> Your profile</a></p>
            
-           <p class="border-b w-full py-2 hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="#"> Settings</a></p>
            
-           <p class="border-b w-full py-2 rounded-b-lg hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="/students/login.html"> Sign out </a></p>
            
         </div>
     </div>
   
-    <main class=" md:w-3/5 w-4/5 m-auto my-4 mt-6">
-        <!-- TOP BANNER AND TEXT -->
-        <div class="flex justify-between p-4 md:px-10 md:py-8 pb-6 space-y-2 flex-wrap h-auto bg-white rounded-lg shadow-sm">
-            <div class="text-sm font-normal sm:w-2/5  w-full pt-3 mb-2 md:mt-8">
-                <p class="text-3xl font-semibold">A heading will be placed here</p>
-                <p class="text-gray-500 font-thin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ut magni aspernatur tempora amet ipsum fugit,
+
+     <!-- TOP BANNER AND TEXT -->
+     <div class="bg-white py-10 bg-gray-200 bg-gradient-to-r from-cyan-500 to-blue-500">
+        <div class="w-full lg:hidden lg:flex-1 h-72">
+            <img class="object-cover object-top h-full w-full lg:rounded-lg" src="./public/images/s1.jpeg" alt="">
+        </div>
+        <div class="flex justify-between flex-wrap h-auto w-full lg:w-8/12 m-auto rounded-lg">
+            <div class=" text-sm font-normal w-full lg:flex-1  lg:space-y-3  pt-3 p-5">
+                <p class="text-5xl font-semibold">A heading will be placed here</p>
+                <p class="text-black text-lg font-thin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ut magni aspernatur tempora amet ipsum fugit,
                      maiores quia dicta ipsam dolore,  a quam.
                 </p>
                 <p class="mt-4">                
-                    <a href="courses.html" class="py-2 px-4 text-white bg-blue-900 rounded-md hover:bg-blue-700 hover:shadow-lg">Explore</a>
+                    <a href="courses.html" class="py-2 px-4 text-white bg-blue-900 rounded-md hover:bg-blue-700 hover:shadow-lg">Explore Courses</a>
                 </p>
-            </div>
 
-            <div class="w-full sm:w-2/4 h-60">
-                <img class="object-cover object-top h-full w-full rounded-lg" src="./public/images/s1.jpeg" alt="">
+                <div class="w-full">
+                     <!-- Search bar -->
+                 <form class="border h-12 mt-6 w-full rounded shadow-lg bg-gray-100 border border-gray-200 md:px-2  py-0 hidden sm:inline-block">
+                    <input type="text" placeholder="Search" class="focus:outline-none bg-gray-100 text-sm  py-3 pl-4  m-0 font-normal w-11/12">
+                    <button type="submit" class="self-center rounded-2xl focus:outline-none text-blue-900 hover:text-blue-500 p-2 ml-0 mt-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>    
+                    </button>
+                </form>
+                </div>
+
+            </div>
+    
+            <div class="w-full hidden lg:block lg:flex-1 h-72">
+                <img class="object-cover object-top h-full w-full lg:rounded-lg" src="./public/images/s1.jpeg" alt="">
             </div>
         </div>
+     </div>
+
+    <main class=" md:w-8/12 w-4/5 m-auto my-4 mt-6">
+
+       
 
         <!-- FEATURED COURSES -->
          <!-- COURSE LIST -->
@@ -278,7 +309,7 @@
 
 
         <!-- AFFILIATE SECTION -->
-        <div class="flex justify-between md:mx-10 my-7 mt-20 sm:w-4/5 m-auto space-y-2 flex-wrap h-auto border border-gray-100 bg-white rounded-lg ">
+        <div id="affiliate" class="flex justify-between md:mx-10 my-7 mt-20 sm:w-4/5 m-auto space-y-2 flex-wrap h-auto border border-gray-100 bg-white rounded-lg ">
             <div class="w-full sm:w-2/4 h-60">
                 <img class="object-cover object-top h-full w-full rounded-t-lg   lg:rounded-none lg:rounded-l-lg" src="./public/images/af.jpeg" alt="">
             </div>
@@ -366,7 +397,7 @@
 
         <!-- CONTACT US -->
         <p class="text-center text-2xl font-bold mt-16">Contact Us</p>
-        <div class="flex justify-between shadow-lg rounded-lg bg-white">
+        <div id="contact" class="flex justify-between shadow-lg rounded-lg bg-white">
             <div class="w-full px-5 py-3 flex-1">
                 <p class="font-bold lg:ml-2 text-xl">Leave us a message</p>
                 <p class="text-sm lg:ml-2 lg:w-11/12">To request a quote or would like to give us a feedback,
@@ -409,8 +440,8 @@
             <div class="col-span-1  space-y-1 text-xs mb-4">             
                 <p class="text-2xl pb-2 font-semibold"><a href="index.html">KIZOMBA</a></p> 
                 <p><a >King & Queen</a></p>
-                <p><a href="#" class="hover:underline">Terms & Conditions</a></p>
-                <p><a href="#" class="hover:underline">Disclaimers</a></p>
+                <p><a href="#" class="hover:underline">Privacy Policy</a></p>
+                <p><a href="#" class="hover:underline">Terms of Use</a></p>
             </div>
 
             <div class="col-span-1 text-xs space-y-1">             
