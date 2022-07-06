@@ -36,11 +36,11 @@
                 </form>
             </div>
             <div class="p-2 py-3 h-16 flex space-x-2 mt-1 ">
-                <a class="border px-3 py-2 text-blue-900 border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="courses.html">Courses</a>
-                <!-- <a class="border px-3 py-2 text-blue-700 border-blue-700 hover:bg-blue-400 hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="/students/register.html">Sign Up</a> -->
-                <a class=" border px-3 py-2 bg-blue-900 text-white border-blue-700 hover:bg-blue-400 hover:border-white hover:text-white transition duration-300 rounded-md text-sm hidden sm:inline-block" href="/students/login.html">Log In</a>
+                <a class="border px-3 py-2 text-blue-900 border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="#">Courses</a>
+                <!-- <a class="border px-3 py-2 text-blue-700 border-blue-700 hover:<footer class="py-5 text-sm bg-white shadow-lg border-b-8 border-blue-900"> hover:border-white hover:text-white transition duration-300 rounded-md text-sm" href="/students/register.html">Sign Up</a> -->
+                <a class=" border px-3 py-2 bg-blue-900 text-white border-blue-900 hover:bg-blue-900 hover:border-white hover:text-white transition duration-300 rounded-md text-sm hidden sm:inline-block" href="/students/login.html">Log In</a>
                 <p class="flex">
-                    <a class="rounded-3xl text-blue-900 pt-2 hover:text-blue-600  block" href="home_cart.html">
+                    <a class="rounded-3xl text-blue-900 hover:text-blue-700 pt-2  block" href="home_cart.html">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                           </svg>
@@ -55,36 +55,42 @@
     <!-- PROFILE DROPDOWN -->
     <div class="relative">
         <div id="menulist" class="absolute hidden  space-y-1 right-0 border w-32 bg-white  mx-1 my-1 rounded-lg">
-           <p class="border-b w-full py-2 rounded-t-lg hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="/students/dashboard.html"> Your profile</a></p>
+            <p class="border-b w-full py-2 rounded-t-lg hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="/students/dashboard.html"> Your profile</a></p>
            
-           <p class="border-b w-full py-2 hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="#"> Settings</a></p>
-           
-           <p class="border-b w-full py-2 rounded-b-lg hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="/students/login.html"> Sign out </a></p>
-           
+            <p class="border-b w-full py-2 hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="#"> Settings</a></p>
+            
+            <p class="border-b w-full py-2 rounded-b-lg hover:bg-blue-900 hover:text-white"><a class="px-2 pr-6 py-2" href="/students/login.html"> Sign out </a></p>
+            
         </div>
     </div>
   
     <main class=" md:w-3/5 w-4/5 m-auto my-4 mt-6">
-        <!-- TOP BANNER AND TEXT -->
-        <div class="flex justify-between p-4 md:px-10 md:py-8 pb-6 space-y-2 flex-wrap h-auto bg-white rounded-lg shadow-sm">
-            <div class="text-sm font-normal sm:w-2/5  w-full pt-3 mb-2 md:mt-8">
-                <p class="text-3xl font-semibold">A heading will be placed here</p>
-                <p class="text-gray-500 font-thin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ut magni aspernatur tempora amet ipsum fugit,
-                     maiores quia dicta ipsam dolore,  a quam.
-                </p>
-                <p class="mt-4">                
-                    <a href="courses.html" class="py-2 px-4 text-white bg-blue-900 rounded-md hover:bg-blue-700 hover:shadow-lg">Explore</a>
-                </p>
-            </div>
-
-            <div class="w-full sm:w-2/4 h-60">
-                <img class="object-cover object-top h-full w-full rounded-lg" src="./public/images/s1.jpeg" alt="">
-            </div>
-        </div>
+       
+        
 
         <!-- FEATURED COURSES -->
          <!-- COURSE LIST -->
-         <p class="text-center text-xl font-bold my-2 mt-10">Featured Courses</p>
+         <p class="text-xl font-bold my-2 mt-10">Courses</p>
+
+         <!-- FILTER COURSES -->
+         <div>
+            <form class="w-full space-y-2 space-x-1" action="">
+                <span>Filter</span>
+                <select class="inline-block border border-slate-300 w-full    lg:w-32  rounded-md py-2 px pl-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"   id="gender" name="gender" >
+                    <option disabled selected>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <select class="inline-block border border-slate-300 w-full   lg:w-32 rounded-md py-2 pl-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"   id="level" name="level" >
+                    <option disabled selected>Level</option>
+                    <option value="Male">Beginner</option>
+                    <option value="Female">Intermediate</option>
+                    <option value="Female">Experts</option>
+                </select>
+                <input class="inline-block px-10 py-2 mx-2 mt-2 ml-0 bg-blue-900 hover:bg-blue-700 text-sm text-white rounded" type="submit" value="Filter"/>
+            </form>
+         </div>
+
          <div class="grid md:grid-cols-3 sm:grid-cols-3 gap-3 mt-5">
             <!-- COURSE ITEM -->
               <div class="border overflow rounded-2xl shadow-lg bg-white border hover:border-gray-400  transition duration-300">
@@ -112,7 +118,7 @@
                 <!-- wishlist and add to cart btn -->
                 <div class="flex flex-wrap justify-center text-center space-x-2 py-2">
                     <a href="#" class="flex-1 py-2 px-3 bg-gray-300 hover:bg-gray-600 hover:text-white rounded transition duration-300   font-normal">Wishlist</a>
-                    <a href="#" class="flex-1 m-0 py-2 px-3 bg-blue-900 hover:bg-blue-700 text-white rounded transition duration-300 truncate font-normal">Add to Cart</a>
+                   <a href="#" class="flex-1 m-0 py-2 px-3 bg-blue-900 hover:bg-blue-700 text-white rounded transition duration-300 truncate font-normal">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -275,132 +281,7 @@
             </div>
             <!-- END COURSE ITEM -->
         </div>
-
-
-        <!-- AFFILIATE SECTION -->
-        <div class="flex justify-between md:mx-10 my-7 mt-20 sm:w-4/5 m-auto space-y-2 flex-wrap h-auto border border-gray-100 bg-white rounded-lg ">
-            <div class="w-full sm:w-2/4 h-60">
-                <img class="object-cover object-top h-full w-full rounded-t-lg   lg:rounded-none lg:rounded-l-lg" src="./public/images/af.jpeg" alt="">
-            </div>
-            <div class="text-sm font-normal sm:w-2/5  w-full pt-3 mb-2 md:mt-8 mx-4">
-                <p class="text-xl font-semibold">Become an Affiliate</p>
-                <p class="text-gray-500 font-thin">Lorem ipsum dolor, sit amet aspernatur tempora amet ipsum fugit,
-                     maiores quia dicta ipsam dolore,  a quam.
-                </p>
-                <p class="mt-3 mb-4">
-                    <a href="#" class="py-2 px-4 text-white bg-blue-900 rounded-md hover:bg-blue-700 hover:shadow-lg">Start earning today</a>
-                </p>
-            </div>
-        </div>
-
-         <!-- TESTIMONIES -->
-         <div>
-            <p class="text-center text-xl font-bold mt-10">Testimonials</p>
-            <div id="carouselExampleCaptions" class="carousel slide relative carousel-dark my-5  border-gray-100 py-3 px-3 rounded-2xl bg-white" data-bs-ride="carousel">
-                <div class="carousel-inner relative w-full overflow-hidden">
-                  <div class="carousel-item active relative float-left w-full text-center">
-                    <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-                      numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
-                    </p>
-                    <div class="mt-12 mb-6 flex justify-center">
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                        class="rounded-full w-24 h-24 shadow-lg"
-                        alt="smaple image"
-                      />
-                    </div>
-                    <p class="text-gray-500">- Anna Morian</p>
-                  </div>
-                  <div class="carousel-item relative float-left w-full text-center">
-                    <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-                      "Neque cupiditate assumenda in maiores repudiandae mollitia adipisci maiores
-                      repudiandae mollitia consectetur adipisicing architecto elit sed adipiscing
-                      elit."
-                    </p>
-                    <div class="mt-12 mb-6 flex justify-center">
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
-                        class="rounded-full w-24 h-24 shadow-lg"
-                        alt="smaple image"
-                      />
-                    </div>
-                    <p class="text-gray-500">- Teresa May</p>
-                  </div>
-                  <div class="carousel-item relative float-left w-full text-center">
-                    <p class="text-xl italic mx-auto text-gray-700 max-w-4xl">
-                      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                      dolore eu fugiat nulla pariatur est laborum neque cupiditate assumenda in
-                      maiores."
-                    </p>
-                    <div class="mt-12 mb-6 flex justify-center">
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
-                        class="rounded-full w-24 h-24 shadow-lg"
-                        alt="smaple image"
-                      />
-                    </div>
-                    <p class="text-gray-500">- Kate Allise</p>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="prev"
-                >
-                  <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="next"
-                >
-                  <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-
-        <!-- CONTACT US -->
-        <p class="text-center text-2xl font-bold mt-16">Contact Us</p>
-        <div class="flex justify-between shadow-lg rounded-lg bg-white">
-            <div class="w-full px-5 py-3 flex-1">
-                <p class="font-bold lg:ml-2 text-xl">Leave us a message</p>
-                <p class="text-sm lg:ml-2 lg:w-11/12">To request a quote or would like to give us a feedback,
-                    contact us directly or fill out the form and we will get
-                    back to you promptyl.
-                </p>
-                <form action="mycourses.html">
-                    <div class="  mt-2 w-full">
-                        <p class="mx-2">Name</p>
-                        <input class="border border-slate-300 w-full lg:w-72   lg:mx-2  rounded-md py-2 pl-3   shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="name" name="name" placeholder="Name" required>
-                     </div>
-                     <div class="  mt-2 w-full">
-                        <p class="mx-2">Email</p>
-                        <input class="border border-slate-300 w-full lg:w-72   lg:mx-2   rounded-md py-2 pl-3   shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="email" id="email" name="email" placeholder="Email" required>
-                     </div>
-                     <div class="  mt-2 w-full">
-                        <p class="mx-2">Message</p>
-                        <textarea class="border border-slate-300 w-full lg:w-72   lg:mx-2  rounded-md py-2 pl-3   shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="email" id="email" name="email" placeholder="Enter email address" required>
-                            
-                        </textarea>
-                     </div>
-                <div class="text-center w-72 px-3 mt-3"> 
-                    <input class="px-10 py-2 w-fulll mx-2 mt-2 ml-0 bg-blue-900 hover:bg-blue-700 text-sm text-white rounded" type="submit" value="Send us a Message"/>
-               </div>
-            </form>
-            </div>
-            <div class="flex-1 rounded-lg hidden lg:inline-block">
-                <img class="object-cover rounded-lg" src="/public/images/contactus.gif" alt="">
-            </div>
-
-        </div>
-
-
-       
+     
     </main>
 
     <!-- FOOTER SECTION -->

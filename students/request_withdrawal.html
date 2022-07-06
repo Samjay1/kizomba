@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <title>Kizomba - Student</title>
 </head>
 <body style="font-family: 'Roboto', sans-serif;" class="bg-gray-100 relative">
@@ -44,13 +45,13 @@
             <!-- nav -->
                         <nav class="mt-5 text-black">
                 
-                <a href="dashboard.html" class="py-2 px-5 flex  rounded-md mx-2 hover:text-white hover:bg-blue-900  transition duration-400">
+                <a href="dashboard.html" class="py-2 px-5 flex   rounded-md mx-2  hover:text-white hover:bg-blue-900 transition duration-400">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                       </svg>
                     <span class="px-4">Dashboard</span></a>
                 <hr class="mx-5">
-                <a href="mycourses.html" class="flex mt-2 py-2 px-5 rounded-md bg-blue-900 text-white mx-2 hover:text-white hover:bg-blue-900 transition duration-400">
+                <a href="mycourses.html" class="flex mt-2 py-2 px-5 rounded-md mx-2 hover:text-white hover:bg-blue-900 transition duration-400">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                       </svg>
@@ -109,7 +110,7 @@
                         <span class="px-4 flex-1">Support</span>
                       </a>
                 <hr class="mx-5">
-                <a href="settings.html" class="flex mt-2 py-2 px-5 rounded-md mx-2 hover:text-white hover:bg-blue-900 transition duration-400">
+                <a href="settings.html" class="flex mt-2 py-2 px-5 bg-blue-900  text-white rounded-md mx-2 hover:text-white hover:bg-blue-900 transition duration-400">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -128,36 +129,55 @@
         </div>
          
         <div class="flex-1 pt-3 text-2xl font-bold">
-            <div class=" py-4 px-5 flex justify-between">
-                <p class="font-normal">Courses</p>
-                <form class="border rounded-xl bg-gray-200 border border-gray-300 md:px-2  py-0 pb-1 mb-3">
-                    <input type="text" placeholder="Search" class="focus:outline-none bg-gray-200 text-sm  py-0 pl-2  m-0 font-thin">
-                    <button type="submit" class="self-center rounded-2xl focus:outline-none text-black hover:bg-gray-300 p-2 ml-0 mt-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>    
-                    </button>
-                </form>
+            <div class=" py-4 px-5 flex justify-start">
+                <p class="font-normal">Withdraw</p>
+                
             </div>
 
 <!-- MAIN CONTENT GOES HERE -->
             <main class="mx-4 mb-5">
-                <div class="flex space-x-4">
-                  <a href="mycourses.html" class="rounded-2xl px-6  bg-blue-900 text-white hover:bg-blue-700 hover:text-white text-md transition  duration-600" style="font-size:0.7em; font-weight: 400;">  All </a>
-                  <a href="empty_courses.html"> <span class="rounded-2xl px-6 py-1 border border-red-700 text-md hover:bg-red-700 hover:text-white transition  duration-600" style="font-size:0.7em; font-weight: 400; ">Ongoing</span></a>
-                  <a href="empty_courses.html"> <span class="rounded-2xl px-6 py-1 border border-green-700 hover:bg-green-700 hover:text-white text-md transition  duration-600" style="font-size:0.7em; font-weight: 400;">Completed</span></a>
+                  <!-- EARNINGS CARD -->
+                  <div class="lg:w-48 bg-white font-normal p-4 py-0 rounded-lg space-x-2 shadow-lg">
+                    <div class="space-y-2 p-2 ">
+                        <p class="text-sm text-gray-400">Balance</p>
+                        <p class="text-sm text-gray-800">Ghs <span class="text-2xl">158.74</span></p>
+                        
+                    </div>
                 </div>
+                
+                <form action="" class="inline-block font-normal">
+                <!-- profile info -->
+                <div class="lg:w-5/5 w-full space-y-2 mt-4">
+                    <input class="w-full border border-slate-300  rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="amount" name="amount" placeholder="Enter amount" required>
+                  
+                    <select class="w-full border border-slate-300 rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"  id="payment_method" name="payment_method" required>
+                        <option disabled selected>select payment option</option>
+                        <option value="mobile">Mobile Money</option>
+                        <option value="bank">Bank Transfer</option>
+                    </select>
 
-                <div class="text-sm font-normal text-center text-gray-500 mt-20 transition duration-300">
-                    <img class="object-fill h-32 w-32 m-auto" src="/public/images/empty.png" alt="">
+                    <!-- Phone number -->
+                    <div id="phone" class="hidden w-full">
+                        <label class="text-lg font-normal">Phone Details</label>
+                        <input class="w-full border border-slate-300  rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="phone" name="phone" placeholder="Enter phone number" >
+                    </div>
+                    
+                    <!-- Bank details -->
+                    <div id="bank" class="space-y-2 hidden w-full">
+                        <label class="text-lg font-normal">Bank Details</label>
+                        <input class="w-full border border-slate-300  rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="account_name" name="account_name" placeholder="Account Name" >
+                        <input class="w-full border border-slate-300  rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="bank_name" name="bank_name" placeholder="Bank Name" >
+                        <input class="w-full border border-slate-300  rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="account_number" name="account_number" placeholder="Account Number" >
+                    </div>
 
-                      <p class="text-gray-400">Looks like your cart is empty</p>
-                      <p class="text-gray-500 font-normal">Explore courses to add your favourite courses to cart</p>
-                      <p class="mt-3"><a href="dashboard.html" class="px-3 py-2 mt-2 bg-blue-900 hover:bg-blue-700 text-sm text-white rounded-md"> Explore Courses</a></p>
-            
+                    <p class="text-sm font-normal">Enter password to confirm withdrawal</p>
+                    <input class="w-full border border-slate-300 rounded-md py-2 pl-3  pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="password" id="password" name="password" placeholder="Enter password" required>
+                    <input class="px-3 py-2 mt-2 bg-blue-900 hover:bg-blue-700  text-white text-sm rounded-md" type="submit" value="Withdraw"/>
+                </form>
+                
+
                 </div>
-
-             
+                
             </main>
 <!-- END MAIN CONTENT GOES HERE -->
 
@@ -165,11 +185,13 @@
         </div>
     </div>
     <footer class="py-5 text-sm bg-white shadow-lg border-b-8 border-blue-900">
-                <div class="text-center font-medium ">
+        <div class="text-center font-medium ">
             <p>&copy; 2022 Kizomba King & Queen. </p>
             <p>All rights reserved | Product of <a class="text-blue-800 hover:underline" href="https://wewritetech.com/">WeWrite Technologies</a></p>
         </div>
     </footer>
+
+    <script src="../public/js/index.min.js"></script>
     <script>
         const menu_button = document.querySelector('.mobile-menu-button');
         const sidebar = document.querySelector('.sidebar');
@@ -177,6 +199,28 @@
         menu_button.addEventListener('click', ()=>{
             sidebar.classList.toggle('-translate-x-full');
         });
+
+         // REQUEST WITHDRAWAL PAGE - SHOW/HIDE PHONE OR BANK INPUTS
+        const bank = document.getElementById('bank')
+        const phone = document.getElementById('phone')
+        const payment_method = document.getElementById('payment_method')
+
+        payment_method.addEventListener('change', (e)=>{
+            if(e.target.value==='bank'){
+                bank.style.display= 'block'
+                phone.style.display = 'none'
+
+            }else if(e.target.value==='mobile'){
+                phone.style.display = 'block'
+                bank.style.display = 'none'
+            }else{
+                bank.style.display = 'none'
+                phone.style.display = 'none'
+            }
+            console.log('e :>> ', e);
+            console.log('value :>> ', e.target.value);
+        })
+       
 </script>
 </body>
 </html>
