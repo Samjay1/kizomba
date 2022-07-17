@@ -147,7 +147,7 @@
                 
                 <form action="" class="inline-block font-normal">
                 <!-- profile info -->
-                <div class="lg:w-5/5 w-full space-y-2 mt-4">
+                <div class="lg:w-5/5 w-full space-y-2 mt-4 text-sm lg:text-lg">
                     <input class="w-full border border-slate-300  rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="amount" name="amount" placeholder="Enter amount" required>
                   
                     <select class="w-full border border-slate-300 rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"  id="payment_method" name="payment_method" required>
@@ -170,7 +170,7 @@
                         <input class="w-full border border-slate-300  rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="account_number" name="account_number" placeholder="Account Number" >
                     </div>
 
-                    <p class="text-sm font-normal">Enter password to confirm withdrawal</p>
+                    <p class="text-sm font-normal ml-1">Enter password to confirm withdrawal</p>
                     <input class="w-full border border-slate-300 rounded-md py-2 pl-3  pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="password" id="password" name="password" placeholder="Enter password" required>
                     <input class="px-3 py-2 mt-2 bg-blue-900 hover:bg-blue-700  text-white text-sm rounded-md" type="submit" value="Withdraw"/>
                 </form>
@@ -192,35 +192,8 @@
     </footer>
 
     <script src="../public/js/index.min.js"></script>
-    <script>
-        const menu_button = document.querySelector('.mobile-menu-button');
-        const sidebar = document.querySelector('.sidebar');
-
-        menu_button.addEventListener('click', ()=>{
-            sidebar.classList.toggle('-translate-x-full');
-        });
-
-         // REQUEST WITHDRAWAL PAGE - SHOW/HIDE PHONE OR BANK INPUTS
-        const bank = document.getElementById('bank')
-        const phone = document.getElementById('phone')
-        const payment_method = document.getElementById('payment_method')
-
-        payment_method.addEventListener('change', (e)=>{
-            if(e.target.value==='bank'){
-                bank.style.display= 'block'
-                phone.style.display = 'none'
-
-            }else if(e.target.value==='mobile'){
-                phone.style.display = 'block'
-                bank.style.display = 'none'
-            }else{
-                bank.style.display = 'none'
-                phone.style.display = 'none'
-            }
-            console.log('e :>> ', e);
-            console.log('value :>> ', e.target.value);
-        })
-       
-</script>
+    <script src="../public/js/nav.js"></script>
+    <script src="../public/js/withdrawal.js"></script>
+    
 </body>
 </html>

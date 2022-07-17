@@ -17,11 +17,8 @@
     <div class="relative min-h-screen md:flex">
         <!-- mobile menu bar -->
         <div class="md:hidden flex justify-between  border-l-8 border-blue-600  bg-white  text-white">
-              <!-- logo -->
-              <a href="../index.html" class="space-x-2 items-center flex mt-3 mb-3 ml-4">
-                  <!-- <img class="h-10 w-10 " src="/images/logo.png"> -->
-               
-              <span class="font-medium text-3xl text-black">KIZOMBA</span>
+               <a class="" href="/index.html">
+                <img class="h-24 bg-white p-2 m-3 rounded-b-3xl mb-0" src="/public/images/logo.png" alt="">
             </a>
 
             <div class="flex">
@@ -143,21 +140,14 @@
                         Add new instructors!
                     </div>
 
-                    <form action="" class="lg:w-2/4 w-full rounded-xl bg-white px-5 py-5">
+                    <form action="" class="lg:w-2/4 w-full rounded-xl bg-white px-5 py-5 text-sm">
                         <div class="flex flex-wrap justify-between gap-2 mt-4 text-sm lg:space-x-2 w-full my-2">
                             <input class="border border-slate-300 flex-1 rounded-md py-2 pl-3 mt-2  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="firstname" name="firstname" placeholder="Firstname">
                             <input class="border border-slate-300 flex-1 rounded-md py-2 pl-3 mt-2 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text" id="lastname" name="lastname" placeholder="Lastname">
                         </div>
                         <input class="border w-full border-slate-300 flex-1 rounded-md py-2 pl-3 mt-2 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="email" id="email" name="email" placeholder="Email">
 
-                        <div class="my-2">
-                            <select class="border border-slate-300 flex-1 rounded-md py-2 pl-3  shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" type="text"  id="country" name="country" style="width:50% ;min-width: 100px;">
-                                <option disabled selected>select course</option>
-                                <option value="AF">Beginner</option>
-                                <option value="AX">Intermediate</option>
-                                <option value="AX">Advanced</option>
-                            </select>
-                        </div>
+                       
                         
                         <input class="px-3 py-2 mt-5 bg-blue-900 hover:bg-blue-700 text-sm text-white rounded-md" type="button" value="Add instructor"/>
                    </form>
@@ -174,13 +164,7 @@
             <p>All rights reserved | Product of <a href="https://wewritetech.com/">WeWrite Technologies</a></p>
         </div>
     </footer>
-    <script>
-        const menu_button = document.querySelector('.mobile-menu-button');
-        const sidebar = document.querySelector('.sidebar');
-
-        menu_button.addEventListener('click', ()=>{
-            sidebar.classList.toggle('-translate-x-full');
-        });
-</script>
+    
+    <script src="../public/js/nav.js"></script>
 </body>
 </html>
